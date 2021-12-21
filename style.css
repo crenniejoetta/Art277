@@ -1,0 +1,194 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/*--- this is the home section--*/
+.home{
+  width: 100%;
+  min-height:100vh;
+  background-image: url(Bg1.png);
+	background-size: cover;
+	background-position: center;
+	
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  background-color: red;
+  position: fixed;
+  z-index: 999;
+}
+.navbar img{
+	width:100px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.menu li{
+  display: inline-block;
+  list-style: none;
+  padding: 5px 20px 5px 10px; 
+  position: relative;
+}
+.menu li a{
+  color: #fff;
+  text-decoration:none;
+	padding-right: 12px;
+	font-size: 20px;
+	font-weight: 600;
+	
+}
+.menu li a::after{
+  content: '';
+  background:#fff;
+  height: 2px;
+  width: 100%;
+  display :block;
+}
+.text-box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h3{
+  color:white;
+  font-size: 85px;
+}
+.text-box p{
+  font-size: 30px;
+	font-weight: 500;
+  color:#F0EAEA;
+  margin-bottom: 100px;
+  line-height: 20px;
+}
+.hero-btn2{
+
+  background: white;
+  border: 4px solid #143E69;
+	border-radius:5px;
+  font-size: 25px;
+  padding :5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* ---- about section ---*/
+.about{
+  text-align: center;
+  margin:auto auto 20px auto;
+  padding-top: 50px;
+}
+.about p{
+  color: gray;
+  margin-bottom: 5%;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.colum {
+  flex-basis: 50%;
+  background-color: slategray;
+  margin: 10px;
+  border-bottom-left-radius: 40px;
+  padding: 10px;
+  
+}
+.colum h2{
+  color: white;
+  padding :5px;
+}
+
+.colum p{
+  color: black ;
+}
+
+/* --- service section ---*/
+.oder{
+ padding-top: 50px;
+ text-align: center;
+ margin: auto;
+}
+ .oder p{
+   color:gray;
+   font-size: 15px;
+   margin-bottom: 20px;
+ }
+.main{
+  width:215px;
+  background:blue;
+  margin-right: 240px;
+  margin-left: 5px;
+  padding:5px;
+  text-align: center;
+  height: 73vh;
+  color: #fff;
+}
+.main h3{
+  padding-top: 5px;
+}
+.sunday{
+  background: red;
+  margin-top: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+.sunday h4{
+  padding-top: 5px;
+}
+.sunday p{
+  color:wheat;
+  padding:5px;
+}
+.side-right{
+  float: right;
+background-color:red;
+margin-right:5px;
+padding:  5px;
+height:73vh;
+color:#fff;
+width: 110px;
+}
+.side-right h3{
+  padding:5px;
+}
+.side-right p{
+  text-align: left;
+  padding:5px;
+  color:wheat;
+}
+
+/*---- this is the pastors section 
+*/
+
+.con-wrap{
+ width: 90%;
+ margin:25px auto;
+ text-align: Center ;
+}
+.con-wrap img{
+  width: 250px;
+  height: 300px;
+  
+  
+  border: 4px solid blue;
+  border-bottom-left-radius: 20px;
+}
+
+.text{
+ text-align: justify;
+  
+}
+ 
+
+
+
+
+
