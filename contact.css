@@ -2,13 +2,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 *{
 			margin :0px;
 			padding:0px;
 			box-sizing: border-box;
-			font-family: roboto
+			font-family: roboto;
 	
 		}
+
 		body{
 			background-image: url("img/lionking-01_wide-ce2824cf630db18fd9951e21d0f92b94cd8988c5-s800-c85.jpg");
 			background-size: cover;
@@ -87,4 +89,111 @@
 	.input-field{
 		width: 100%;
 	}
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("pic 7.jpeg");
+	background-size:cover;
+	background-position:center;
+	position:relative;
+}
+.navbar{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding:1% 6%;
+	width:100%;
+	background:#047957;
+	z-index: 999;
+	position:fixed;
+	
+}
+.navbar img{
+	width:50px;
+	
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+	
+	
+}
+.menu li{
+	display: inline-block;
+	list-style:none;
+	padding: 8px 12px;
+	position: relative;
+}
+.menu li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: yellow;
+	display:block;
+	transition: 0.5s ease-in-out;
+}
+.menu li:hover::after{
+	width: 100%;
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+.text-box{
+	width: 90%;
+	color:#047957;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	margin:20px 0;
+	color:red;
+	font-weight: 700;
+	font-size: 70px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.text-box h2{
+	font-size:38px;
+}
+.text-box span{
+	color: #D95705;
+}
+@media(max-width:700px){
+	.text-box{
+		text-align: center;
+		position:absolute;
+		top:50%;
+		left:50%;
+	}
+	.text-box h1{
+	color:blue;
+	font-size: 25px;     
+}
+	.menu li{
+	display: block;
+	list-style:none;
+	
+}
+	.nav-links{
+	position: absolute;
+		background: blue;
+		height: 100vh;
+		width:200px;
+		top:0px;
+		right: 0px;
+		text-align:right;
+		z-index: 2;
+	
+}
+	.nav-links .menu{
+		padding:30px;
+	}
+	.navbar img{
+	width:75px;
 }
